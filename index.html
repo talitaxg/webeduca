@@ -1,34 +1,42 @@
-<!DOCTYPE html> 
-<html lang="pt-BR"> 
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-     <link rel="icon" href="data:,">
-<meta charset="UTF-8"> 
-<meta name="viewport" 
-content="width=device-width, initial-scale=1.0"> 
-<title>EduWeb — Aprenda Programação</title> 
-     <meta name="description" content="Portal de aprendizagem com cursos de tecnologia: HTML, CSS e JavaScript.">
-<link rel="stylesheet" href="css/style.css"> 
-<script src="js/script.js" defer></script> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduWeb — Aprenda Programação</title>
+<meta name="description" content="Portal de aprendizagem com cursos de tecnologia: HTML, CSS e JavaScript.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
-<body> 
-<header> 
-<h1>Saber digital</h1> 
-<p>Aprenda tecnologia de forma prática.</p> 
-</header> 
-<main> 
-<section aria-labelledby="pesquisa-titulo"> 
-<h2 id="pesquisa-titulo">Pesquisar cursos disponiveis</h2> 
-<form id="form-pesquisa"> 
-<label for="curso">Curso</label> 
-<input id="curso" name="curso" type="search" 
-placeholder="Ex.: HTML e CSS"> 
-<button type="submit">Pesquisar</button> 
-</form> 
-<p id="resultado" aria-live="polite"></p> 
-</section> 
-</main> 
-<footer> 
-<p>WebEduca — Projeto educacional.</p> 
-</footer> 
-</body> 
+<body>
+<header>
+  <h1>Saber digital</h1>
+  <p>Aprenda tecnologia de forma prática.</p>
+  <nav aria-label="Navegação principal">
+    <a href="#cursos">Cursos</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+</header>
+<main>
+  <section id="cursos" aria-labelledby="titulo-cursos">
+    <h2 id="titulo-cursos">Pesquisar cursos disponíveis</h2>
+    <form id="form-pesquisa">
+      <label for="curso">Curso</label>
+      <input id="curso" name="curso" type="search" placeholder="Ex.: HTML e CSS">
+      <button type="submit">Pesquisar</button>
+    </form>
+    <p id="resultado" aria-live="polite"></p>
+    <div id="lista-cursos" class="lista-cursos"></div>
+  </section>
+
+  <section id="sobre" aria-labelledby="titulo-sobre">
+    <h2 id="titulo-sobre">Sobre o projeto</h2>
+    <p>O WebEduca é um portal educacional estático, desenvolvido com HTML5, CSS3 e JavaScript, que apresenta um catálogo simples de cursos introdutórios de programação.</p>
+  </section>
+</main>
+<footer>
+  <p>WebEduca — Projeto educacional.</p>
+</footer>
+</body>
 </html>
