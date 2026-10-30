@@ -109,4 +109,4 @@ O projeto não utiliza imagens, portanto não houve otimização de imagens.
 - [Talita Gabriely Mendes de Lima]
 
 Disciplina: Programação Web I — Engenharia de Software — UEPA
-Professora: MSc Jacqueline Teixeira
+Professora: Jacqueline Teixeira
