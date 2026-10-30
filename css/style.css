@@ -1,53 +1,120 @@
 :root {
   --cor-primaria: #880e4f;
   --cor-destaque: #ad1457;
-}* { 
-box-sizing: border-box; 
-} 
-body { 
-margin: 0; 
-font-family: Arial, sans-serif; 
-line-height: 1.6; 
-color: #243047; 
-background-color: #f4f7fb; 
-} 
-header, 
-footer { 
-padding: 1.5rem;
-  text-align: center; 
-background-color: #880e4f; 
-color: white; 
-} 
-main { 
-width: min(90%, 760px); 
-margin: 2rem auto; 
-} 
-section { 
-padding: 1.5rem; 
-background-color: white; 
-border-radius: 10px; 
-} 
-label, 
-input, 
-button { 
-display: block; 
-width: 100%; 
-margin-top: 0.75rem; 
-} 
-input, 
-button { 
-padding: 0.8rem; 
-font: inherit; 
-} 
-button { 
-border: 0; 
-border-radius: 6px; 
-background-color: #ad1457; 
-color: white; 
-cursor: pointer; 
-} 
-button:focus-visible, 
-input:focus-visible { 
-outline: 3px solid #f0a500; 
-outline-offset: 2px; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #243047;
+  background-color: #f4f7fb;
+}
+
+header,
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+main {
+  width: min(90%, 760px);
+  margin: 2rem auto;
+}
+
+section {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+section + section {
+  margin-top: 1.5rem;
+}
+
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+input,
+button {
+  padding: 0.8rem;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  background-color: var(--cor-destaque);
+  color: white;
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #f0a500;
+  outline-offset: 2px;
+}
+
+header nav {
+  margin-top: 0.75rem;
+}
+
+header nav a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+header nav a:focus-visible {
+  outline: 3px solid #f0a500;
+  outline-offset: 2px;
+}
+
+#resultado {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.lista-cursos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.curso {
+  padding: 1rem;
+  border: 1px solid #d7dfeb;
+  border-top: 4px solid var(--cor-destaque);
+  border-radius: 8px;
+  background-color: white;
+}
+
+.curso h3 {
+  margin-top: 0;
+  color: var(--cor-primaria);
+}
+
+.curso .detalhes {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .lista-cursos {
+    grid-template-columns: 1fr;
+  }
 }
