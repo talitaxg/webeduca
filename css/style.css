@@ -1,4 +1,7 @@
-* { 
+:root {
+  --cor-primaria: #880e4f;
+  --cor-destaque: #ad1457;
+}* { 
 box-sizing: border-box; 
 } 
 body { 
