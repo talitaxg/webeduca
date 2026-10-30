@@ -5,9 +5,9 @@ formulario.addEventListener("submit", function (evento) {
 evento.preventDefault(); 
 const curso = campoCurso.value.trim(); 
 if (curso === "") { 
-resultado.textContent = "Digite o nome de um curso."; 
+resultado.textContent = "Seja bem-vindo, digite aqui o curso que você deseja."; 
 campoCurso.focus(); 
 return; 
 } 
-resultado.textContent = `Pesquisa realizada: ${curso}`; 
+resultado.textContent = `Pesquisa concluida: ${curso}`; 
 });
